@@ -1,5 +1,196 @@
 /* Resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* Fonts */
+@font-face {
+  font-family: "Blow";
+  src: url(./assets/fonts/blow.ttf);
+}
+
+@font-face {
+  font-family: "Zeroes 1";
+  src: url(./assets/fonts/zeroes\ one.ttf);
+}
+
+@font-face {
+  font-family: "Zeroes 3";
+  src: url(./assets/fonts/zeroes\ three.ttf);
+}
+
 /* Variables */
+:root {
+  --primary: #ffffff;
+  --bg: #1c1c1c;
+}
+
 /* Base Styles */
+body {
+  background-color: var(--bg);
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+header .dark_mode {
+  display: flex;
+  gap: 0.5rem;
+}
+
+header h1,
+.dark_mode p,
+footer a {
+  font-family: "Zeroes 3";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 19px;
+
+  color: var(--primary);
+}
+
+main p {
+  font-family: "Blow";
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--bg);
+}
+
+main p:nth-child(1) {
+  background: linear-gradient(
+    89.89deg,
+    #9e78f3 0%,
+    #84b4b6 20.14%,
+    #f6d649 40.45%,
+    #f4c1a4 60.76%,
+    #ecafaa 80.56%,
+    #bbafe9 100%
+  );
+  background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+}
+
+main p:nth-child(2) {
+  background: linear-gradient(
+    89.89deg,
+    #ade2cc 0%,
+    #e889ba 20.14%,
+    #d83b34 40.45%,
+    #df9066 60.76%,
+    #8babe8 80.56%,
+    #e9ade0 100%
+  );
+
+  background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+}
+
+main p:nth-child(3) {
+  background: linear-gradient(
+    89.89deg,
+    #b6ebe9 0%,
+    #f7dde8 20.14%,
+    #bc493d 40.45%,
+    #e75a4a 60.76%,
+    #b6b7b8 80.56%,
+    #f1f1f1 100%
+  );
+
+  background-clip: text;
+  -webkit-text-stroke: 1px transparent;
+}
+
 /* Mobile Styles */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+
+  overflow: hidden;
+}
+
+main > * {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+main p {
+  font-size: 8.75rem;
+}
+
+main p:nth-child(2) {
+  margin-top: -8px;
+}
+
+main p:nth-child(3) {
+  margin-top: -16px;
+}
+
+/* Small Tablet styles */
+@media screen and (min-width: 600px) {
+  main p {
+    font-size: 15.75rem;
+  }
+}
+
+/* Large Tablet styles */
+@media screen and (min-width: 800px) {
+  main p {
+    font-size: 20.75rem;
+  }
+}
+
+/* Laptop styles */
+@media screen and (min-width: 1500px) {
+  main {
+    position: relative;
+  }
+
+  main p {
+    font-size: 40.75rem;
+  }
+
+  main img {
+    position: absolute;
+    top: 10rem;
+    left: 45rem;
+  }
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1600px) {
+  main {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  main p {
+    font-size: 43.75rem;
+  }
+}

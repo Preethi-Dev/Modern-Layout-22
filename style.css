@@ -93,6 +93,7 @@ main p:nth-child(1) {
     #bbafe9 100%
   );
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-stroke: 4px transparent;
 }
 
@@ -108,6 +109,8 @@ main p:nth-child(2) {
   );
 
   background-clip: text;
+  -webkit-background-clip: text;
+
   -webkit-text-stroke: 4px transparent;
 }
 
@@ -123,6 +126,8 @@ main p:nth-child(3) {
   );
 
   background-clip: text;
+  -webkit-background-clip: text;
+
   -webkit-text-stroke: 1px transparent;
 }
 

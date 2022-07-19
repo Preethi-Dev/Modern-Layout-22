@@ -43,10 +43,10 @@ img {
 }
 
 .container {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 100px;
+  overflow: hidden;
 }
 
 header,
@@ -73,12 +73,17 @@ footer a {
   color: var(--primary);
 }
 
+main {
+  padding: 100px 0;
+}
+
 main p {
   font-family: "Blow";
   font-style: normal;
   font-weight: 400;
   text-align: center;
   letter-spacing: 0.04em;
+  line-height: 100%;
   color: var(--bg);
 }
 
@@ -134,9 +139,6 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-
-  overflow: hidden;
-  z-index: 1;
 }
 
 main > * {
@@ -174,10 +176,13 @@ main p:nth-child(3) {
 @media screen and (min-width: 1500px) {
   main {
     position: relative;
+    max-width: 1650px;
+    margin: 0 auto;
   }
 
   main p {
-    font-size: 40.75rem;
+    font-size: 43.75rem;
+    transform: translateX(-5rem);
   }
 
   main img {

@@ -194,6 +194,10 @@ main p:nth-child(3) {
     margin: 0 auto;
   }
 
+  main img {
+    left: 50rem;
+  }
+
   main p {
     font-size: 43.75rem;
   }

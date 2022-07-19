@@ -184,7 +184,7 @@ main p:nth-child(3) {
   main img {
     position: absolute;
     top: 10rem;
-    left: 45rem;
+    left: 43rem;
   }
 }
 
@@ -197,5 +197,10 @@ main p:nth-child(3) {
 
   main p {
     font-size: 43.75rem;
+    transform: none;
+  }
+
+  main img {
+    left: 48rem;
   }
 }

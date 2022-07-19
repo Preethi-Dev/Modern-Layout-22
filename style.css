@@ -43,10 +43,10 @@ img {
 }
 
 .container {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 100px;
+  overflow: hidden;
 }
 
 header,
@@ -135,8 +135,6 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-
-  overflow: hidden;
 }
 
 main > * {
@@ -174,10 +172,13 @@ main p:nth-child(3) {
 @media screen and (min-width: 1500px) {
   main {
     position: relative;
+    max-width: 1650px;
+    margin: 0 auto;
   }
 
   main p {
-    font-size: 40.75rem;
+    font-size: 43.75rem;
+    transform: translateX(-5rem);
   }
 
   main img {
@@ -190,11 +191,6 @@ main p:nth-child(3) {
 /* Desktop styles */
 @media screen and (min-width: 1600px) {
   main {
-    max-width: 1650px;
-    margin: 0 auto;
-  }
-
-  main p {
-    font-size: 43.75rem;
+    overflow: visible;
   }
 }

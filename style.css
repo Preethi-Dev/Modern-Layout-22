@@ -73,6 +73,10 @@ footer a {
   color: var(--primary);
 }
 
+main {
+  padding: 100px 0;
+}
+
 main p {
   font-family: "Blow";
   font-style: normal;
@@ -178,7 +182,11 @@ main p:nth-child(3) {
 
   main p {
     font-size: 43.75rem;
+<<<<<<< HEAD
     transform: translateX(-5rem);
+=======
+    transform: translate(-5rem);
+>>>>>>> a630e881ab2002d19dee7faa307289bd1a7dbcd8
   }
 
   main img {
